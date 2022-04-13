@@ -1,0 +1,12 @@
+.timer-components {
+    display: flex;
+    flex-wrap: nowrap;
+    .each-component {
+        margin: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+}
+.border-black {
+    border: 5px solid black;
+}

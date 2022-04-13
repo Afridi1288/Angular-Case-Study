@@ -1,0 +1,14 @@
+.div-dimension {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+section {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .div-dimension{
+        cursor: pointer;
+    }
+}

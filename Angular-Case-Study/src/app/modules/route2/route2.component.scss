@@ -1,0 +1,32 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+}
+.each-card {
+    width: 18rem;
+    flex-basis: 22%;
+    margin-bottom: 20px;
+}
+.product-image {
+    width: 100%;
+    height: 100%;
+}
+.cards-list-view {
+    width: 80%;
+    margin: auto;
+}
+.list-view {
+    flex-basis: 47%;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.view-btns {
+    padding: 0 10px;
+}
+.filter-btns {
+    padding: 0 10px;
+}

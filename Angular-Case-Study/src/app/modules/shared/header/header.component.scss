@@ -1,0 +1,19 @@
+.header {
+    background-color: beige;
+    padding: 10px 20px;
+    h1{
+        margin-bottom: 0 !important;
+    }
+}
+.navigation {
+    background-color:rgb(230, 194, 161);
+    padding: 10px 20px;
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 0 5px;
+        &:hover {
+            color: gray;
+        }
+    }
+}

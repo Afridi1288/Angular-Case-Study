@@ -1,0 +1,35 @@
+<header>
+    <h3>ROUTE 2</h3>
+</header>
+<main>
+    <section>
+        <div class="buttons">
+            <section class="view-btns">
+                <button aria-label="Grid view" (click)="changeView('grid')">
+                    <i class="fa fa-th"></i>      
+                </button>
+                <button aria-label="list view"  (click)="changeView('list')">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </section>
+            <section class="filter-btns">
+                <select name="filter" id="filter" (change)="filter()" >
+                    <option value="lowToHigh">Price : LOW TO HIGH</option>
+                    <option value="highToLow">Price : HIGH TO LOW</option>
+                </select>
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="cards" id="cards">
+            <div *ngFor="let product of products" class="card each-card" id="eachCard">
+                <img class="card-img-top product-image" [src]="product.image" [alt]="product.name">
+                <div class="card-body">
+                  <h5 class="card-title">{{product.name}}</h5>
+                  <p class="card-text">{{product.price | currency: 'INR'}}</p>
+                  <button class="btn btn-info">Add to cart</button>
+                </div>
+              </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,23 @@
+<header>
+    <h3>ROUTE 3: Using @Input() and @Output() Decorators</h3>
+</header>
+<main class="pt-3">
+    <section class="border-black">
+        <div class="timer-components">
+            <div class="each-component border-black">
+                <app-component1 [timerLimit]="timerLimit"></app-component1>
+            </div>
+            <div class="each-component border-black">
+                <app-component2 (timerEmitter)="setTimer($event)" [pausedArray]="pausedArray"></app-component2>
+            </div>
+        </div>
+        <div class="timer-components">
+            <div class="each-component">
+                <app-component3 [timeStamps]="timeStamps"></app-component3>
+            </div>
+            <div class="each-component">
+                <app-component4 [startCounter]="startCounter" [pauseCounter]="pauseCounter"></app-component4>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,12 @@
+<main class="main">
+    <section>
+        <label>Enter Timer Limit : <input type="number" id="timerInput"></label>
+    </section>
+    <section class="buttons">
+        <button id="startPauseBtn" (click)="startTimer()" class="px-4 m-3 btn btn-primary">Start</button>
+        <button (click)="resetTimer()" class="px-3 m-3 btn btn-danger">Reset</button>
+    </section>
+    <section *ngIf="pausedArray && pausedArray.length>0" class="pause-section">
+        <div *ngFor="let each of pausedArray"><b>paused at {{each}}</b></div>
+    </section>
+</main>
