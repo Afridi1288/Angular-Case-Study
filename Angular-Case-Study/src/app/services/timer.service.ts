@@ -22,7 +22,8 @@ export class TimerService {
     if(timerData.type == 'reset') {
       this.startCounter = 0;
       this.pauseCounter = 0;
-      this.timeStamps = []
+      this.timeStamps = [];
+      this.pausedArray = []
       this.timerSubject.next({timerLimit: 0, type: 'reset'})
     } else if (timerData.type == 'pause') {
       this.pauseCounter++

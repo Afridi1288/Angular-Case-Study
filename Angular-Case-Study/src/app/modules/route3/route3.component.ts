@@ -24,6 +24,7 @@ export class Route3Component implements OnInit {
       this.startCounter = 0;
       this.pauseCounter = 0;
       this.timeStamps = []
+      this.pausedArray = []
     } else if (timerData.type == 'pause') {
       if(this.timerLimit)
         this.pausedArray.push(this.timerLimit);
